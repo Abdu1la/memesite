@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>LuffyCoin</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/516dffb81d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <section>
+    <img src="Bg.png" id="bg">
+    <img src="Luffy.png" id="luffy">
+    <img src="Coin.png" id="coin">
+    <img src="Boat.png" id="boat">
+    <div class="headerText">
+      <h1 class="">Luffy Coin</h1>
+      <p class="subText">Must go faster. Is this my espresso machine? Wh-what is-h-how <br>
+        did you get my espresso machine? Do you have any idea <br>
+        how long takes those cups to decompose. Just my luck, no ice.</p>
+    </div>
+  </section>
+
+
+
+  <div class="AboutPage">
+
+    <div class="Container">
+      <div class="containerAbout reveal">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <img class="coinLarge reveal" src="Coin Large.png" alt="">
+    </div>
+    <!-- <section class="cloudsDivider"> -->
+    <img id="cloud" src="Clouds.png" alt="">
+    <!-- </section> -->
+  </div>
+  <div class="emptyDivider">
+
+  </div>
+
+  <div class="goalPage">
+    <div class="ourGoals bg">
+      <h1>Our Goals</h1>
+    </div>
+    <div class="rectangleParent reveal">
+
+      <div class="rectangle">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt</p>
+      </div>
+      <div class="rectangle">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt. sit amet, dolor sit amet, consectetur adipisicing elit,
+          sed</p>
+      </div>
+      <div class="rectangle">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt. do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed</p>
+      </div>
+    </div>
+  </div>
+  <!-- <img class="smallClouds sC9" src="smallClouds-2.png" id="smallCloud9"> -->
+
+  <div class="father">
+
+
+    <div class="smallCloudContainer blur">
+      <div class="ourGoals">
+        <h1>Tokenomics</h1>
+      </div>
+      <img class="smallClouds sC2" src="smallClouds-2.png" id="smallCloud2">
+      <img class="smallClouds sC6" src="smallClouds-6.png" id="smallCloud6">
+      <img class="smallClouds sC8" src="smallClouds-2.png" id="smallCloud8">
+      <img class="smallClouds sC1" src="smallClouds-1.png" id="smallCloud1">
+      <img class="smallClouds sC3" src="smallClouds-3.png" id="smallCloud3">
+      <img class="smallClouds sC4" src="smallClouds-4.png" id="smallCloud4">
+      <img class="smallClouds sC5" src="smallClouds-5.png" id="smallCloud5">
+      <img class="smallClouds sC7" src="smallClouds-7.png" id="smallCloud7">
+
+      <div class="squareParent reveal blur">
+
+        <div class="square">
+          <h3><span class="number">5%</span> <br> Rewards</h3>
+        </div>
+        <div class="square">
+          <h3><span class="number2">2.3%</span> <br> Charity</h3>
+        </div>
+        <div class="square">
+          <h3><span class="number">2%</span> <br> Burns</h3>
+        </div>
+        <div class="square">
+          <h3><span class="number2">1.9%</span> <br> Liquidity</h3>
+        </div>
+        <img class="luffyJump reveal" src="LuffyJump.png" alt="">
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+  <div class="roadmapsection">
+    <div class="ourGoals">
+      <h1>RoadMap</h1>
+    </div>
+    <div class="roadMapWrapper reveal">
+
+      <img src="RoadMap.png" alt="">
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <h3>JOIN OUR COMMUNITY</h3>
+    <div class="iconsWrapper">
+      <i class=" icons fab fa-facebook-square"></i>
+      <i class=" icons fab fa-twitter"></i>
+      <i class=" icons fas fa-envelope"></i>
+      <i class=" icons fab fa-discord"></i>
+      <i class=" icons fab fa-instagram"></i>
+    </div>
+    <h6>©Copyrights 2022 Luffy Coin</h6>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll(" .reveal , .blur");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+
+    let bg = document.getElementById("bg");
+    let luffy = document.getElementById("luffy");
+    let coin = document.getElementById("coin");
+    let boat = document.getElementById("boat");
+    let cloud = document.getElementById("cloud");
+    let smallCloud1 = document.getElementById("smallCloud1");
+    let smallCloud2 = document.getElementById("smallCloud2");
+    let smallCloud3 = document.getElementById("smallCloud3");
+    let smallCloud4 = document.getElementById("smallCloud4");
+    let smallCloud5 = document.getElementById("smallCloud5");
+    let smallCloud6 = document.getElementById("smallCloud6");
+    let smallCloud7 = document.getElementById("smallCloud7");
+    let smallCloud8 = document.getElementById("smallCloud8");
+    let smallCloud9 = document.getElementById("smallCloud9");
+
+    window.addEventListener('scroll', function() {
+      var value = window.scrollY;
+
+      bg.style.top = value * 0.5 + 'px';
+      luffy.style.left = value * 0.15 + 'px';
+      coin.style.top = -value * 1 + 'px';
+      cloud.style.top = -value * 1 + 'px';
+      smallCloud1.style.right = value * .1 + 'px';
+      smallCloud2.style.left = value * .3 + 'px';
+      smallCloud3.style.right = value * .2 + 'px';
+      smallCloud4.style.left = value * .2 + 'px';
+      smallCloud5.style.left = value * .1 + 'px';
+      smallCloud6.style.right = value * .4 + 'px';
+      smallCloud7.style.left = value * .5 + 'px';
+      smallCloud8.style.left = value * .5 + 'px';
+      smallCloud9.style.right = value * .5 + 'px';
+
+    });
+  </script>
+</body>
+
+</html>
